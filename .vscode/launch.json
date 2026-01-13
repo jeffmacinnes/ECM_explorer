@@ -1,0 +1,21 @@
+// Debug launch template for vscode
+// -- This will launch chrome with the "debug"
+// profile, where certain extensions are already
+// installed. Any additional extensions that are installed
+// will also be saved to this profile.
+// To Use: copy this into a `.vscode` directory
+// in the root level of a repo
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Chrome",
+			"type": "chrome",
+			"request": "launch",
+			"url": "http://localhost:5175",
+			"runtimeArgs": ["--auto-open-devtools-for-tabs"],
+			"skipFiles": ["<node_internals>/**", "${workspaceFolder}/node_modules/**"],
+			"userDataDir": "/Users/jeff/Library/ApplicationSupport/Google/Chrome/'Profile 1'/"
+		}
+	]
+}

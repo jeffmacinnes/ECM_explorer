@@ -1,0 +1,4 @@
+@mixin background-hex2rgba($hexcolor, $opacity) {
+	// background-color: $hexcolor;
+	background-color: rgba($hexcolor, $opacity);
+}

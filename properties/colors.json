@@ -1,0 +1,31 @@
+{
+	"color": {
+		"black": {
+			"value": "#000000"
+		},
+		"white": {
+			"value": "#ffffff"
+		},
+		"c1": {
+			"value": "#EE644D"
+		},
+		"c2": {
+			"value": "#97A62C"
+		},
+		"g1": {
+			"value": "#3C3C3C"
+		},
+		"g2": {
+			"value": "#737373"
+		},
+		"g3": {
+			"value": "#B7B7B7"
+		},
+		"g4": {
+			"value": "#DCDCDC"
+		},
+		"g5": {
+			"value": "#F4F4F4"
+		}
+	}
+}
