@@ -1,38 +1,39 @@
-# create-svelte
+# ECM Explorer
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+An interactive visual explorer for the ECM Records catalog (~1,700 albums). Browse the complete discography through a canvas-rendered timeline with physics-based animations, filter by artist, and discover musical connections.
 
-## Creating a project
+## Features
 
-If you're seeing this, you've probably already done this step. Congrats!
+- **Canvas-Rendered Timeline** - Smooth scrolling through 50+ years of albums with physics-based animations
+- **Scroll-Driven Year Labels** - Large typography that animates to sticky headers as you scroll
+- **Minimap Navigation** - Histogram showing album counts per year with draggable scrubber
+- **Artist Filtering** - Search and filter by artist with expanded header showing bio, photo, and collaborators
+- **Collaborator Discovery** - Click through musician relationships to explore connections
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+## Getting Started
 
 ```bash
+npm install
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
-## Building
+The dev server runs on port 5175.
 
-To create a production version of your app:
+## Data
 
-```bash
-npm run build
-```
+The catalog data is sourced from:
+- **ecmreviews.com** - Canonical catalog and album reviews
+- **Discogs API** - Credits, artwork, artist images, and bios
 
-You can preview the production build with `npm run preview`.
+See `.claude/CLAUDE.md` for full documentation on the data pipeline and architecture.
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+## Tech Stack
+
+- SvelteKit
+- Canvas API for rendering
+- Physics-based animations (spring + friction)
+- SCSS for styling
+
+## License
+
+MIT
